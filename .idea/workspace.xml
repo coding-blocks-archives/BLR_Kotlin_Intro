@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="850f1450-fff5-4bee-adba-0636a9bb7cf9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/extensions.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/stdlibfuncs.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KotlinIntro/META-INF/KotlinIntro.kotlin_module" afterPath="$PROJECT_DIR$/out/production/KotlinIntro/META-INF/KotlinIntro.kotlin_module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hof.kt" afterPath="$PROJECT_DIR$/src/hof.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/inline.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="extensions.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/extensions.kt">
+      <file leaf-file-name="inline.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/inline.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="256">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -63,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/hof.kt" />
         <option value="$PROJECT_DIR$/src/stdlibfuncs.kt" />
         <option value="$PROJECT_DIR$/src/extensions.kt" />
+        <option value="$PROJECT_DIR$/src/inline.kt" />
       </list>
     </option>
   </component>
@@ -132,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ExtensionsKt">
+  <component name="RunManager" selected="Kotlin.InlineKt">
     <configuration name="ExtensionsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="VM_PARAMETERS" />
@@ -153,6 +148,18 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="HofKt" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="KotlinIntro" />
+      <envs />
+    </configuration>
+    <configuration name="InlineKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="InlineKt" />
       <option name="WORKING_DIRECTORY" />
       <module name="KotlinIntro" />
       <envs />
@@ -228,16 +235,18 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Kotlin.MainKt" />
       <item index="1" class="java.lang.String" itemvalue="Kotlin.HofKt" />
       <item index="2" class="java.lang.String" itemvalue="Kotlin.ExtensionsKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.InlineKt" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.ExtensionsKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.HofKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.MainKt" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.InlineKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.ExtensionsKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.HofKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -251,12 +260,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521719242632</updated>
-      <workItem from="1521719244836" duration="3477000" />
+      <workItem from="1521719244836" duration="3863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3477000" />
+    <option name="totallyTimeSpent" value="3863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="698" extended-state="6" />
@@ -269,7 +278,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin Bytecode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31569967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31569967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -374,8 +383,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/extensions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="256">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inline.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
